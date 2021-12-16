@@ -1,5 +1,6 @@
 import {useState} from 'react'
 
+const NavbarHEIGHT = 48;
 let lastSearch = "";
 let searchNavCounter = 0;
 
@@ -30,10 +31,8 @@ const SearchProject = ({offset}) => {
     
         const element = elements[searchNavCounter]
     
-        if (element?.offsetTop) {
-            // TODO The OffsetTop is Not working as expected, 
-            // for every component is taking the offsetTop from 0 of the component and not the 0 of the window
-            window.scrollTo(0, element.offsetTop + 400) 
+        if (element?.getBoundingClientRect()) {
+            window.scrollTo(0, element?.getBoundingClientRect().top + window.scrollY - NavbarHEIGHT) 
         }
     }
     return (

@@ -4,6 +4,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+// import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
 
@@ -41,6 +42,7 @@ const App = () => {
       <Contact className=""/>
       <Footer className=""/>
       {/* <button className="button-scroll-top"title="Go to top">Top</button> */}
+      {/* <ScrollToTop /> */}
     </>
   );
 }

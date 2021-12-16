@@ -29,7 +29,7 @@ const Projects = () => {
                     ></path>
                 </svg>
             </div>
-            <div className="section-content ">
+            <div className="section-content" id="projects">
                 <h2 className="content-title">
                     Projects
                 </h2>

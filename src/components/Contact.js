@@ -21,7 +21,7 @@ const Contact = () => {
                     ></path>
                 </svg>
             </div>
-			<div className="section-content " id="contact">
+			<div className="section-content" id="contact">
                 <div className="blob-content">
                     <h2 className="content-title">
                         Contact

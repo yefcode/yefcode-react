@@ -12,7 +12,7 @@ const Project = ({repo}) => {
         desc += "...";
     }
     return (
-        <li id="repo-item" className="repo-list-item fade-in-bottom">
+        <li className="repo-list-item fade-in-bottom">
             <div className="repo-item-content">
                 <a className="repo-title-name" href={repo.html_url}>{repo.name}</a>
                 <p className="repo-description">

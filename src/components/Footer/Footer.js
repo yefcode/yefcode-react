@@ -1,4 +1,5 @@
 import GitHubButton from 'react-github-btn'
+import './Footer.scss'
 
 const Footer = () => {
     const today = new Date();

@@ -1,0 +1,64 @@
+.search-form {
+  position: relative;
+  border: 1px solid hsl(0, 0%, 91%);
+  border-radius: 10px;
+  height: 34px;
+  margin-top: 6px;
+}
+
+.search-form.scrolled {
+  border: none;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.nav-search {
+  padding: 8px;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  background-color: hsla(0, 0%, 0%, 0);
+}
+
+.nav-search:focus {
+  width: 300px;
+  outline: none;
+}
+
+.nav-search.scrolled {
+  color: #000;
+}
+
+.nav-search::placeholder {
+  color: #fff;
+}
+
+.nav-search.scrolled::placeholder {
+  color: #000;
+}
+
+
+.submit-search-button {
+  position: relative;
+  top: 4px;
+  border: none;
+  background: none;
+}
+
+.svg-search-icon {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.svg-search-icon.scrolled {
+  fill: #000;
+}
+
+.svg-search-icon:hover {
+  fill: #aaa;
+}
+
+.svg-search-icon.scrolled:hover {
+  fill: #555;
+  /* TODO THERE IS A LITTLE BUG, THE SIZE IS TOO BIG, WHEN HOVER OUTSIDE, IT'S APPLYING THE STYLE */
+}

@@ -18,22 +18,19 @@
   flex-direction: row;
   justify-content: space-around;
 
-  @include respond-down($size-sm) {
-    // flex-direction: column;
+  @include respond-down($size-xs) {
+    flex-direction: column;
     // left: 60px;
-    // background-color: red;
   }
 
   @include respond-down($size-xs) {
     // flex-direction: column;
     // left: 60px;
-    // background-color: rgb(255, 0, 191);
   }
 
   @include respond-between() {
     // flex-direction: column;
     // left: 60px;
-    // background-color: rgb(9, 255, 0);
   }
 }
 
@@ -45,7 +42,7 @@
 
 .nav-link {
   font-size: 17px;
-  padding: 14px 16px;
+  padding: 12px 16px;
   text-decoration: none;
   color: #fff;
 }
@@ -80,69 +77,3 @@
   background-color: #2196f3;
   border-bottom: none;
 }
-
-.search-form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.svg-search-icon {
-  fill: #fff;
-}
-
-.svg-search-icon.scrolled {
-  fill: #000;
-}
-
-.svg-search-icon:hover {
-  fill: #aaa;
-}
-
-.svg-search-icon.scrolled:hover {
-  fill: #555;
-  /* TODO THERE IS A LITTLE BUG, THE SIZE IS TOO BIG, WHEN HOVER OUTSIDE, IT'S APPLYING THE STYLE */
-}
-
-.submit-search-button {
-  position: absolute;
-  width: 30px;
-  top: 13px;
-  right: 5px;
-  bottom: 13px;
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.nav-search {
-  width: 200px;
-  padding: 6px;
-  font-size: 17px;
-  border-radius: 5px;
-
-  color: #fff;
-  border: 1px solid #e9e9e9;
-  background-color: #00000000;
-}
-
-.nav-search:focus {
-  width: 300px;
-  outline: none;
-}
-
-.nav-search.scrolled {
-  border: none;
-  color: #000;
-  background-color: #e9e9e9;
-}
-
-.nav-search::placeholder {
-  color: #fff;
-}
-
-.nav-search.scrolled::placeholder {
-  color: #000;
-}
-

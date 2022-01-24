@@ -1,4 +1,5 @@
 import GitHubButton from 'react-github-btn'
+import './Project.scss'
 
 const Project = ({repo}) => {
 

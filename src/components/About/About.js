@@ -1,3 +1,5 @@
+import './About.scss'
+
 const About = () => {
     return (
         <section className="main-section">
@@ -12,7 +14,6 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                {/* <!-- <img className="github-avatar" src="https://avatars.githubusercontent.com/u/45394302" alt="YEFERSON MARIN"> --> */}
             </div>
         </section>
     )

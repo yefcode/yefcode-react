@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
-import SearchProject from './SearchProject'
+import SearchProject from './SearchProject/SearchProject'
+import './navbar.scss'
 
 const navbarLinksData = [
     {ref:"#about", label:"About", activeStyle:false},
@@ -14,15 +15,11 @@ const NavBar = () => {
     const [offset, setOffset] = useState(false)
 
     useEffect(() => {
-        // TODO When refreshing from Projects or Contact the style is wrong...
-        // TODO to fix check the route and update the style according to the current route
         toggleActiveClass(0)
     }, [])
     
     useEffect(() => {
         window.onscroll = () => {
-            // const navbar = document.querySelector("#navbar")
-            // scrollFlag = window.scrollY > navbar.clientHeight
             setOffset(window.scrollY > NavbarHEIGHT)
         }
     }, [])

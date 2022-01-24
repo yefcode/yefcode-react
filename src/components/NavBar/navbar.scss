@@ -1,3 +1,6 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
 .navbar-transition {
   transition: all 150ms linear;
 }
@@ -14,6 +17,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  @include respond-down($size-sm) {
+    // flex-direction: column;
+    // left: 60px;
+    // background-color: red;
+  }
+
+  @include respond-down($size-xs) {
+    // flex-direction: column;
+    // left: 60px;
+    // background-color: rgb(255, 0, 191);
+  }
+
+  @include respond-between() {
+    // flex-direction: column;
+    // left: 60px;
+    // background-color: rgb(9, 255, 0);
+  }
 }
 
 .navbar.scrolled {

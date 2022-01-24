@@ -5,7 +5,6 @@ let lastSearch = "";
 let searchNavCounter = 0;
 
 const SearchProject = ({offset}) => {
-
     const [searchText, setSearchText] = useState('');
 
     const onSubmit = (e) => {

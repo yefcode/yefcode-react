@@ -1,0 +1,17 @@
+@mixin respond-up($min-width: $size-sm) {
+    @media screen and (min-width: #{$min-width}) {
+        @content;
+    }
+}
+
+@mixin respond-down($max-width: $size-sm) {
+    @media screen and (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+@mixin respond-between($min-width: $size-sm, $max-width: $size-md) {
+    @media screen and (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+        @content;
+    }
+}

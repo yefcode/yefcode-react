@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import Project from './Project'
+import Project from './Project/Project'
+import './projects.scss'
 
 const Projects = () => {
     const [repos, setRepos] = useState([])

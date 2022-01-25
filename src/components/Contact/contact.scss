@@ -1,8 +1,17 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.blob-content {
+  z-index: 1;
+}
+
 .contact-content {
   margin: 0 auto;
-  min-width: 400px;
   display: flex;
   flex-direction: column;
+  @include respond-up($size-xs) {
+    min-width: 400px;
+  }
 }
 
 .contact-input-label {
@@ -50,9 +59,6 @@
   position: relative;
 }
 
-.blob-content {
-  z-index: 1;
-}
 
 .blob-motion {
   position: absolute;

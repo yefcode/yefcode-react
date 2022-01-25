@@ -18,20 +18,10 @@
   flex-direction: row;
   justify-content: space-around;
 
-  @include respond-down($size-xs) {
-    flex-direction: column;
-    // left: 60px;
-  }
-
-  @include respond-down($size-xs) {
-    // flex-direction: column;
-    // left: 60px;
-  }
-
-  @include respond-between() {
-    // flex-direction: column;
-    // left: 60px;
-  }
+  // @include respond-down($size-sm) {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
 }
 
 .navbar.scrolled {

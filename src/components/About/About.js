@@ -8,11 +8,9 @@ const About = () => {
                     <h1 className="title">
                         YEFERSON MARIN
                     </h1>
-                    <div className="typewriter typewriter-anim">
-                        <p className="subtitle">
-                            JavaScript, CSS, Node, React, Svelte, Angular and Java
-                        </p>
-                    </div>
+                    <p className="subtitle">
+                        JavaScript, React, Angular, CSS, TypeScript, Node and Java
+                    </p>
                 </div>
             </div>
         </section>
